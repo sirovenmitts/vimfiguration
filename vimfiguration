@@ -1,0 +1,32 @@
+" Start by loading Pathogen, which will load every plugin in ~/.vim/bundle.
+execute pathogen#infect()
+
+" Of course, I'd love me some syntax highlighting and indenting.
+syntax on
+filetype plugin indent on
+
+" Moving between windows is a pain the ass, unless you can skip pressing <C-w>
+" first. That's exactly what these maps take care of.
+map <C-h> <C-w><C-h>
+map <C-j> <C-w><C-j>
+map <C-k> <C-w><C-k>
+map <C-l> <C-w><C-l>
+
+" NERDTree is a sweet filesystem viewer, and this map toggles its display.
+map <C-g> :NERDTreeToggle<CR>
+
+" Pressing <ESC> manually everytime is too much work.
+imap jj <ESC>
+
+" Tabs don't need to be big to make a big statement.
+set tabstop=2
+set shiftwidth=2
+
+" Other random crap...
+" 1) Allow buffers to be hidden while containing unwritten changes.
+" 2) Show line numbers, always.
+" 3..4) Don't make a swap file and put all undo files in one place.
+set hidden
+set number
+set noswapfile
+set undodir^=~/.vim/undo
