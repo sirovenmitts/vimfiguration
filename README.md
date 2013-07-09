@@ -11,6 +11,6 @@ A set of VIM configurations that I like. You might like them too, if you tried t
 
 ###### MAPPINGS:
 
-* jj will press <ESC> for you, which is good - that <ESC> key is so far away
-* <C-g> will toggle NERDTree's display
-* <C-hjkl> move through the various windows you might create on a given day
+* jj will press `<ESC>` for you, which is good - that `<ESC>` key is so far away
+* `<C-g>` will toggle NERDTree's display
+* `<C-hjkl>` move through the various windows you might create on a given day
