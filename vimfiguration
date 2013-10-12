@@ -1,4 +1,7 @@
-" Start by loading Pathogen, which will load every plugin in ~/.vim/bundle.
+" Don't try to be compatible with VI.
+set nocompatible
+
+" Load Pathogen, which will load every plugin in ~/.vim/bundle.
 execute pathogen#infect()
 
 " Of course, I'd love me some syntax highlighting and indenting.
@@ -20,13 +23,22 @@ imap jj <ESC>
 
 " Tabs don't need to be big to make a big statement.
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
+set noexpandtab
 
 " Other random crap...
 " 1) Allow buffers to be hidden while containing unwritten changes.
 " 2) Show line numbers, always.
-" 3..4) Don't make a swap file and put all undo files in one place.
+" 3..5) Don't make a swap file and put all undo files in one place.
+" 6) Show me where I am in a document, please.
+" 7) Anything other than UTF-8 can go home.
+" 8) Umm... don't wrap long lines?
 set hidden
 set number
 set noswapfile
+set nobackup
 set undodir^=~/.vim/undo
+set ruler
+set encoding=utf-8
+set nowrap
