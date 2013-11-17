@@ -42,3 +42,9 @@ set undodir^=~/.vim/undo
 set ruler
 set encoding=utf-8
 set nowrap
+
+" Have you ever edited a config file without having elevated your
+" privileges first? I have, and it's annoying. Thanks to
+" @guildencrantz and this [1] gist I don't have to worry about it anymore
+" [1]: https://gist.github.com/guildencrantz/976812
+command! ElevateAndWrite execute ":w !sudo tee %"
