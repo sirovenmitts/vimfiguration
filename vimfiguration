@@ -1,9 +1,11 @@
-source bundle/vim-pathogen/autoload/pathogen.vim
+let $VIMHOME=expand('<sfile>:p:h')
+set runtimepath+=$VIMHOME/bundle
+source $VIMHOME/bundle/vim-pathogen/autoload/pathogen.vim
 " Don't try to be compatible with VI.
 set nocompatible
 
 " Load Pathogen, which will load every plugin in ~/.vim/bundle.
-execute pathogen#infect()
+execute pathogen#infect('$VIMHOME/bundle/{}')
 
 " Of course, I'd love me some syntax highlighting and indenting.
 syntax on
