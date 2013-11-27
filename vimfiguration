@@ -1,3 +1,4 @@
+source bundle/vim-pathogen/autoload/pathogen.vim
 " Don't try to be compatible with VI.
 set nocompatible
 
