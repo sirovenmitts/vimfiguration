@@ -28,7 +28,7 @@ imap jj <ESC>
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-set noexpandtab
+set expandtab
 
 " Other random crap...
 " 1) Allow buffers to be hidden while containing unwritten changes.
@@ -51,3 +51,8 @@ set nowrap
 " @guildencrantz and this [1] gist I don't have to worry about it anymore
 " [1]: https://gist.github.com/guildencrantz/976812
 command! ElevateAndWrite execute ":w !sudo tee %"
+
+nnoremap <Space> za
+nnoremap <S-Space> zR
+set foldmethod=indent
+
