@@ -10,3 +10,6 @@
 [submodule "vim-coffee-script"]
 	path = bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script
+[submodule "bundle/vim-diffchanges"]
+	path = bundle/vim-diffchanges
+	url = https://github.com/jmcantrell/vim-diffchanges
