@@ -52,7 +52,13 @@ set nowrap
 " [1]: https://gist.github.com/guildencrantz/976812
 command! ElevateAndWrite execute ":w !sudo tee %"
 
+" Folding up code or other bits of text you aren't using just makes sense.
+" Press the spacebar in normal mode to fold/unfold a section; press shift-space
+" to unfold all folds in a document
 nnoremap <Space> za
 nnoremap <S-Space> zR
-set foldmethod=indent
+set foldmethod=syntax
 
+" Press Control-A in normal mode to toggle displaying all the changes you've
+" made to a document before saving it.
+map <C-a> :DiffChangesDiffToggle<CR>
