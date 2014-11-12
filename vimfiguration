@@ -62,3 +62,8 @@ set foldmethod=syntax
 " Press Control-A in normal mode to toggle displaying all the changes you've
 " made to a document before saving it.
 map <C-a> :DiffChangesDiffToggle<CR>
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces

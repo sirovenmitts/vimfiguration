@@ -13,3 +13,12 @@
 [submodule "bundle/vim-diffchanges"]
 	path = bundle/vim-diffchanges
 	url = https://github.com/jmcantrell/vim-diffchanges
+[submodule "bundle/rainbow_parentheses"]
+	path = bundle/rainbow_parentheses
+	url = https://github.com/kien/rainbow_parentheses.vim
+[submodule "bundle/vim-arduino"]
+	path = bundle/vim-arduino
+	url = https://github.com/tclem/vim-arduino
+[submodule "bundle/vim-liquid"]
+	path = bundle/vim-liquid
+	url = https://github.com/tpope/vim-liquid
